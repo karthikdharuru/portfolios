@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Karthik Dharuru - Portfolio</title>
+    <script>
+       function myFunction(x) {
+            x.classList.toggle("change");
+
+            var arrayOfElements = document.getElementsByClassName('collapse');
+            var lengthOfArray = arrayOfElements.length;
+
+            for (var i = 0; i < lengthOfArray; i++) {
+                if (arrayOfElements[i].style.display == 'flex') {
+                    arrayOfElements[i].style.display = 'none';
+                } else if (arrayOfElements[i].style.display == ''  || arrayOfElements[i].style.display == 'none') {
+                    arrayOfElements[i].style.display = 'flex';
+                }
+                console.log(arrayOfElements[i].style.display)
+            }
+
+            var menuContainer = document.getElementsByClassName('menu-container')[0];
+            if (menuContainer.style.display == 'flex') {
+                menuContainer.style.display = 'none';
+            } else if (menuContainer.style.display == '' || menuContainer.style.display == 'none') {
+                menuContainer.style.display = 'flex';
+            }
+}
+    </script>
+    
+</head>
+<body>
+    
+    <div class="main-body">      
+        <div class=side-nav>
+            <div class="pic-photo">
+                
+                <img src="myphoto.jpeg" alt="Karthik Dharuru" class="profile-pic collapse">
+               
+                <div class="display-name">
+                <div class="float-top">
+                    <p>Karthik Dharuru</p>
+                    <div class="menu" onclick="myFunction(this)">
+                        <div class="bar1"></div>
+                        <div class="bar2"></div>
+                        <div class="bar3"></div>
+                    </div>
+                </div>
+                
+            </div>
+            </div>
+            <div class="menu-container">
+                <div class="resume collapse">
+                    <a href="Karthik_Dharuru_Resume.pdf" class="btn btn-primary" download>Resume</a>
+                </div>
+                <div class="ref-links collapse" >
+                    <a href="#about" class="collapse">About</a>
+                    <a href="#education" class="collapse">Education</a>
+                    <a href="#skills" class="collapse">Skills</a></li>
+                    <a href="#experience" class="collapse">Experience</a>
+                    <a href="#projects" class="collapse">Projects</a>
+                    <a href="#profile" class="collapse">Profile</a>
+                </div>
+                
+                <div class="social-media collapse">
+                    <a href="https://www.twitter.com/Karthikchandu_5" target="_blank">
+                        <img class="collapse" src="twitter.png" alt="twitter">
+                    </a>
+                    <a  href="https://www.linkedin.com/in/karthikchandu5201/" target="_blank">
+                        <img  class="collapse" src="linkedin.png" alt="linkedin">
+                    </a>
+                    <a href="https://www.instagram.com/karthik_chandu05/" target="_blank">
+                    <img class="collapse"src="insta.png" alt="instagram">
+                    </a>
+                </div>
+                
+             </div>
+        </div>
+    
+
+        <div class="content">
+            <section id="about">
+                <div class="container">
+                    <h2>About Me</h2>
+                    <div class="about-content">
+                        <div class="about-text">
+                            <p>I'm Karthik Dharuru, a driven Software Engineer and Computer Science enthusiast. Currently pursuing a degree in Computer Science at California State University, Long Beach, I specialize in technologies ranging from Java and C# to web development frameworks like Angular and Node.js. My journey has taken me through innovative ends at Lead Squared and Deloitte, enhancing my expertise in application development and user experience design.
+                            Outside the office, I tinker with personal projects like my Log File Analyzer and Permission Approval System, passionately crafting efficient solutions. With a track record of excellence exemplified by a Java Full Stack Development certification and a national coding competition runner-up placement, I'm continuously seeking connection and collaboration opportunities in the dynamic tech landscape.</p>
+                           
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="education">
+                <h2>Education</h2>
+                <div class="container">
+                    <div class="education">
+                        <div class="masters">   
+                        </div>
+                        <div class="gpa">
+                            <p>MS</p>
+                            <p>Major: Computer Science and Engineering</p>
+                            <p>GPA: 4/4</p>
+                        </div>
+                        <p style="text-align: center;"><strong>California State University, Long Beach<p>
+                        <p style="text-align: center;"></strong> (August 2023-Present)</p>
+                    </div>
+                    <div class="education">
+                        <div class="btech">
+                        </div>
+                        <div class="gpa">
+                            <P>B.Tech</P>
+                            <p>Major: Computer Science and Engineering</p>
+                            <p>CGPA: 9.18/10</p>
+                        </div>
+                        <p style="text-align: center;"><strong>KL University, Vijayawada, India</strong> 
+                            <p style="text-align: center;">(July 2018-May 2022)</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="skills">
+                <div class="container">
+                  <h2>Technical Skills</h2>
+                  <div class="row">
+                    <div class="card">
+                      <h3>Programming Languages</h3>
+                      <div class="skills-list">
+                        <span class="skill-box">Java</span>
+                        <span class="skill-box">Python</span>
+                        <span class="skill-box">C</span>
+                        <span class="skill-box">C#</span>
+                     
+                      </div>
+                    </div>
+                    <div class="card">
+                      <h3>Web Technologies</h3>
+                      <div class="skills-list">
+                        <span class="skill-box"> HTML5 </span>
+                        <span class="skill-box">CSS3</span>
+                        <span class="skill-box">JavaScript</span>
+                        <span class="skill-box">PHP</span>
+                        <span class="skill-box">Bootstrap5</span>
+                        <span class="skill-box">Rest API</span>
+                        <span class="skill-box">GraphQL</span>
+                        <span class="skill-box">Apache Kafka</span>
+                        <span class="skill-box">Asp .Net MVC</span>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <h3>Frameworks</h3>
+                      <div class="skills-list">
+                        <span class="skill-box"> Node.js </span>
+                        <span class="skill-box">React.js</span>
+                        <span class="skill-box">Angular Js</span>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <h3>Databases</h3>
+                      <div class="skills-list">
+                        <span class="skill-box"> MySQL </span>
+                        <span class="skill-box">MongoDB</span>
+                        <span class="skill-box">PostgreSQL</span>
+                        <span class="skill-box">Orient DB</span>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <h3>Tools</h3>
+                      <div class="skills-list">
+                        <span class="skill-box"> Git </span>
+                        <span class="skill-box">Eclipse</span>
+                        <span class="skill-box">Visual Studio </span>
+                        <span class="skill-box">JIRA</span>
+                        <span class="skill-box"> Postman </span>
+                        <span class="skill-box">JMeter</span>
+                        <span class="skill-box">Junit</span>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <h3>Deployment</h3>
+                      <div class="skills-list">
+                        <span class="skill-box"> AWS S3 </span>
+                        <span class="skill-box">AWS RDS</span>
+                        <span class="skill-box">AWS EC2 </span>
+                        <span class="skill-box">AWS ECS</span>
+                        <span class="skill-box"> GCP </span>
+                        <span class="skill-box">Docker</span>
+                        <span class="skill-box">Kubernetes</span>
+                        
+                      </div>
+                    </div>
+                  </div>
+                
+              </section>
+
+            <section id="experience">
+                <div class="container">
+                    <h2>Work Experience</h2>
+                    <div class="job">
+                        <h3>Lead Squared – Intern Software Engineer (India)</h3>
+                        <p>October 2021 – May 2022</p>
+                        <ul>
+                            <li>Orchestrated dynamic landing pages, merging front-end and back-end expertise for heightened user engagement.</li>
+                            <li>Core team contributor, shaping foundational features for seamless development of subsequent functionalities.</li>
+                            <li>Innovated rules-based data capture, enhancing marketing precision for effective audience targeting.</li>
+                            <li>Customized landing page creator, delivering 100+ personalized pages, amplifying client online presence.</li>
+                            <li>Implemented personalized email triggers, converting potentials to clients through tailored messages.</li>	                        <li>Distinguished for excellence in code review, ensuring high-quality standards and collaborative success within the team.
+                        </ul>
+                    </div>
+
+                    <div class="job">
+                        <h3>Deloitte – Software Engineer (Hyderabad, India)</h3>
+                        <p>June 2022 – July 2023</p>
+                        <ul>
+                            <li>Pioneered the Innowake initiative, meticulously extracting crucial metrics from legacy code to expedite the migration process, resulting in a remarkable 30% acceleration of API migration.</li>
+                            <li>Guided core feature development for the Dawn code, optimizing the migration process and establishing efficient dependencies between code components.</li>
+                            <li>Implemented features to enhance migration processes, contributing to the successful ideation and execution of Dawn code.</li>
+                            <li>Recognized for active resolution of challenges, regression and critical tickets earning commendation from leadership for effective problem-solving.</li>
+                            <li>Demonstrated effective communication skills through three presentations on innovative features and use cases, fostering collaboration within the product engineering team.</li>
+                    
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section id="projects">
+                <div class="container">
+                    <h2>Projects</h2>
+                    <div class="project">
+                        <h3>Log File Analyzer (Java, Spring Boot, Angular, AWS, Postman)</h3>
+                        <p>Designed and executed Log-File Analyzer with 85% accuracy, streamlining log file analysis with visualizations and charts.</p>
+                        <p>Created an API for internal use at Deloitte, receiving positive feedback.</p>
+                        <p>Significantly reduced the time required for log file analysis, emphasizing error detection through visualization.</p>
+                    </div>
+
+                    <div class="project">
+                        <h3>Permission Approval System (Java, Angular, Spring Boot, HTML, CSS, Bootstrap)</h3>
+                        <p>Developed health policy recommendation system for Deloitte Ideathon, showcasing innovation in insurance technology.</p>
+                        <p>Utilized Java, Angular, HTML, CSS, and MongoDB for a seamless and secure system, demonstrating expertise in diverse technologies.</p>
+                        <p>Earned significant praise during the Ideathon presentation, highlighting the positive impact and potential of the project.</p>
+                        <p>Explored opportunities for further refinement, aiming to enhance the system's capabilities and contribute to personalized health insurance solutions. </p>
+
+                    </div>
+
+                    <div class="project">
+                        <h3>Restaurant Management System (ASP.net)</h3>
+                        <p>Fortified student registration and data updates, ensuring project security, and demonstrating expertise in ASP.NET MVC and Angular.</p>
+                        <p>Secured the Management module, simplifying company and representative management securely through MySQL.</p>
+                        <p>Implemented a robust company module, prioritizing project security while streamlining job listing, student filtering, and list curation.</p>
+
+                </div>
+            </section>
+
+            <section id="profile">
+                <div class="container">
+                    <h2>Profile</h2>
+                    <ul>
+                        <li><strong>LinkedIn:</strong> <a href="your-linkedin-profile">linkedin.com/in/your-linkedin-profile</a></li>
+                        <li><strong>GitHub:</strong> <a href="your-github-profile">github.com/your-github-profile</a></li>
+                        <li><strong>LeetCode:</strong> <a href="your-leetcode-profile">leetcode.com/your-leetcode-profile</a></li>
+                    </ul>
+                </div>
+            </section>
+            <footer style="background-color: #457b9d; padding: 20px; color: #fff;">
+                <h2>Contact</h2>
+                <ul style="list-style-type: none; padding: 0; margin: 0;">
+                    <li><strong>Email:</strong> <a href="mailto:karthikdharuru@gmail.com" style="color: #fff; text-decoration: none;">karthikdharuru@gmail.com</a></li>
+                    <li><strong>Phone:</strong> 562-374-6213</li>
+                </ul>
+            </footer>
+        </div>
+    </div>
+</body>
+</html>
